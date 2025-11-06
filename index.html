@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
+  <title>My Cool Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #111, #333);
+      color: white;
+      text-align: center;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      padding: 120px 20px;
+      animation: fadein 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: auto;
+      opacity: 0.85;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      font-size: 18px;
+      background: #ff4444;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #ff2222;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 100px 20px;
+    }
+
+    @keyframes fadein {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    footer {
+      padding: 20px;
+      background: #000;
+      font-size: 14px;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>My first free website using GitHub Pages.</p>
+
+  <header>
+    <h1>Welcome</h1>
+    <p>This is my cool free website hosted on GitHub Pages.</p>
+    <a href="#about" class="btn">Explore</a>
+  </header>
+
+  <section id="about">
+    <h2>About This Website</h2>
+    <p>
+      Everything here is coded in just one file:
+      HTML + CSS + JavaScript. No paid hosting, no ads.
+      Simple. Clean. Functional.
+    </p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can put your socials or email here.</p>
+    <button class="btn" onclick="alert('Thanks for visiting!')">
+      Click Me
+    </button>
+  </section>
+
+  <footer>
+    © 2025 My Cool Website
+  </footer>
+
 </body>
 </html>
